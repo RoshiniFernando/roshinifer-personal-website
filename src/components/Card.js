@@ -84,7 +84,7 @@ export const BlogCardDemo = React.memo(function BlogCard() {
       <CardContent>
         <TextInfoContent
           classes={contentStyles}
-          overline={'28 MAR 2019'}
+          overline={'01 SEP 2022'}
           heading={'What is Git ?'}
           body={
             'Git is a distributed version control system. Every dev has a working copy of the code and...'
