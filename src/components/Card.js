@@ -18,6 +18,8 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     position: 'relative',
     maxWidth: 500,
     marginLeft: 'auto',
+    // marginRight: 60,
+    marginTop: 20,
     overflow: 'initial',
     background: '#ffffff',
     display: 'flex',

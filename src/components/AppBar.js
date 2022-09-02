@@ -20,7 +20,7 @@ import kaggle from '../Images/kaggle.png';
 import github from '../Images/github.png';
 
 
-const pages = ['About', 'Projects', 'Blog', 'Contact'];
+const pages = ['Projects', 'Blog', 'Contact'];
 //const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -67,7 +67,7 @@ const ResponsiveAppBar = () => {
             Roshinifer
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -99,7 +99,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link style = {{textDecoration: "none"}} to = {`/${page}`}>
+                    <Link style = {{textDecoration: "none", color: 'whitesmoke'}} to = {`/${page}`}>
                     {page}
                     </Link>
                   </Typography>
@@ -109,10 +109,10 @@ const ResponsiveAppBar = () => {
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -120,20 +120,20 @@ const ResponsiveAppBar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'lightblue',
+              color: '#3E5287',
               textDecoration: 'none',
             }}
           >
             Roshinifer
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-               <Link style = {{textDecoration: "none"}} to = {`/${page}`}>
+               <Link style = {{textDecoration: "none", color: 'whitesmoke'}} to = {`/${page}`}>
                     {page}
                     </Link>
               </Button>

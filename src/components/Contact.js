@@ -1,8 +1,10 @@
 import * as React from 'react';
+import { Email } from './email';
+
 const Contact = () => {
     return (
       <div>
-       Contact
+       <Email/>
       </div>
     );
   };

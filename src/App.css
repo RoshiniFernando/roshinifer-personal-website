@@ -140,3 +140,5 @@ width: 60%;
 z-index: 1;
 transition: 0.3s ease-in-out;
 }
+
+.row {margin: 0 -5px;}
