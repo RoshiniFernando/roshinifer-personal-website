@@ -19,6 +19,9 @@ import linkedin from '../Images/linkedin.png';
 import kaggle from '../Images/kaggle.png';
 import github from '../Images/github.png';
 
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+
+
 
 const pages = ['Projects', 'Blog', 'Contact'];
 //const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -112,26 +115,37 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            // href="/"
             sx={{
-              mr: 2,
+              mr: 9,
               display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: '#3E5287',
+              // flexGrow: 1,
               textDecoration: 'none',
             }}
           >
-            Roshinifer
+            <PopupState variant="popover" popupId="demo-popup-menu">
+              {(popupState) => (
+                <React.Fragment>
+                   <Button {...bindTrigger(popupState)} style = {{fontFamily:'monospace' , fontWeight: 700,
+              letterSpacing: '.3rem',color: 'darkblue'}}>
+                      Roshinifer
+                   </Button>
+                  <Menu {...bindMenu(popupState)}>
+                  <MenuItem onClick={popupState.close } as={Link} to='/projects'>Projects</MenuItem>
+                  <MenuItem onClick={popupState.close} as={Link} to='/blog'>Blog</MenuItem>
+                  <MenuItem onClick={popupState.close} as={Link} to='/contact'>Contacts</MenuItem>
+                  <MenuItem onClick={popupState.close} as={Link} to='/'>Back to Home</MenuItem>
+                  </Menu>
+                 </React.Fragment>
+              )}
+            </PopupState>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
+                // sx={{ my: 2, color: 'black', display: 'block' }}
               >
                <Link style = {{textDecoration: "none", color: 'whitesmoke'}} to = {`/${page}`}>
                     {page}
