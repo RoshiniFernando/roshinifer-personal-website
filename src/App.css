@@ -142,3 +142,54 @@ transition: 0.3s ease-in-out;
 }
 
 .row {margin: 0 -5px;}
+
+
+
+/* form */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:1px solid #000000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  text-align: left;
+}
+
+.feedback-input:focus { border:2px solid #FFCF4C; }
+
+textarea {
+  height: 120px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 50%;
+  background:#FFCF4C;
+  border-radius:25px;
+  border:0;
+  cursor:pointer;
+  color:rgb(0, 0, 0);
+  font-size:16px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#FFCF4C;}

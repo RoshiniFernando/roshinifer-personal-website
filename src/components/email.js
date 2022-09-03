@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Card } from '@material-ui/core';
 
 export const Email = () => {
   const form = useRef();
@@ -17,14 +18,19 @@ export const Email = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="to_name" />
-      <label>Email</label>
-      <input type="email" name="from_name" />
-      <label>Message</label>
-      <textarea name="message" />
+    <div>
+      <Card style={{ maxWidth: 580, margin:30,maxHeight:600,borderRadius:50}}>
+      <form ref={form} onSubmit={sendEmail}>
+      <label style={{display:'block',textAlign:'center', fontWeight:1000, fontSize:24}}>Put me a quick message</label><br/>
+      <label style={{display:'block',textAlign:'left'}}>Your Full Name</label>
+      <input type="text" name="to_name" class="feedback-input"/>
+      <label style={{display:'block',textAlign:'left'}}>Your Email Address</label>
+      <input type="email" name="from_name" class="feedback-input"/>
+      <label style={{display:'block',textAlign:'left'}}>Message</label>
+      <textarea name="message" class="feedback-input"/>
       <input type="submit" value="Send" />
     </form>
+      </Card>
+    </div>
   );
 };
