@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/roshinifer-personal-website/static/css/main.f393d2d7.css",
-    "main.js": "/roshinifer-personal-website/static/js/main.b2a0a0cc.js",
-    "static/js/787.9c9599c8.chunk.js": "/roshinifer-personal-website/static/js/787.9c9599c8.chunk.js",
-    "static/media/background_image.jpg": "/roshinifer-personal-website/static/media/background_image.ce2c8567d38c71e19f5a.jpg",
-    "static/media/worktable.png": "/roshinifer-personal-website/static/media/worktable.fc0adfd368e2ac1d58cd.png",
-    "static/media/chatt.png": "/roshinifer-personal-website/static/media/chatt.8b22ebc55e431f4f4268.png",
-    "index.html": "/roshinifer-personal-website/index.html",
-    "main.f393d2d7.css.map": "/roshinifer-personal-website/static/css/main.f393d2d7.css.map",
-    "main.b2a0a0cc.js.map": "/roshinifer-personal-website/static/js/main.b2a0a0cc.js.map",
-    "787.9c9599c8.chunk.js.map": "/roshinifer-personal-website/static/js/787.9c9599c8.chunk.js.map"
+    "main.css": "./static/css/main.9b9a3f8e.css",
+    "main.js": "./static/js/main.e7d1d9ca.js",
+    "static/js/787.9c9599c8.chunk.js": "./static/js/787.9c9599c8.chunk.js",
+    "static/media/background_image.jpg": "./static/media/background_image.ce2c8567d38c71e19f5a.jpg",
+    "static/media/worktable.png": "./static/media/worktable.fc0adfd368e2ac1d58cd.png",
+    "static/media/chatt.png": "./static/media/chatt.8b22ebc55e431f4f4268.png",
+    "index.html": "./index.html",
+    "main.9b9a3f8e.css.map": "./static/css/main.9b9a3f8e.css.map",
+    "main.e7d1d9ca.js.map": "./static/js/main.e7d1d9ca.js.map",
+    "787.9c9599c8.chunk.js.map": "./static/js/787.9c9599c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f393d2d7.css",
-    "static/js/main.b2a0a0cc.js"
+    "static/css/main.9b9a3f8e.css",
+    "static/js/main.e7d1d9ca.js"
   ]
 }
