@@ -118,8 +118,8 @@
 }
 
 .social-icon {
-  display: inline-block;
-  margin-left: 14px;
+  display: inline-flex;
+  margin-left: 1px;
 }
 
 .social-icon a::before {
@@ -152,7 +152,7 @@ transition: 0.3s ease-in-out;
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
-  color:white;
+  color:rgb(0, 0, 0);
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
