@@ -193,3 +193,20 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#FFCF4C;}
+
+
+.card_design button {
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin: 50px;
+  margin-bottom: auto;
+  background-color:#3E5287;
+  color: #000;
+  display: flex;
+}
+
+.card_design button:hover {
+  background-color: #356dc2; /* Green */
+  color: rgb(0, 0, 0);
+}
+ 

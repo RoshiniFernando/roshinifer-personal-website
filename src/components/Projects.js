@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {BlogCardDemo} from '../components/Card';
+import {Card1} from '../components/card_design';
+import ReusableComponents from './Reusable__components';
 
 const Projects = () => {
   return (
@@ -8,6 +10,8 @@ const Projects = () => {
       <BlogCardDemo/>
       <BlogCardDemo/>
       <BlogCardDemo/> */}
+    {/* <Card1/> */}
+    <ReusableComponents/>
     </div>
   );
 };
